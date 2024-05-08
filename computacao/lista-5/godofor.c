@@ -1,4 +1,5 @@
 #include <stdio.h> 
+#include <string.h>
 
 #define MAXN 100
 
@@ -11,26 +12,32 @@ typedef struct {
 
 void lerdados(GODOFOR v[], int *n){
     for(int i = 0; i < *n; i++){
-        scanf("%s", v[i].nome);
-        scanf("%d", &v[i].p);
-        scanf("%d", &v[i].k);
-        scanf("%d", &v[i].m);
+        scanf("%s %d %d %d", v[i].nome, &v[i].p, &v[i].k, &v[i].m);
     }
 
 }
 
+char *key(char *s,GODOFOR a){
+    sprintf(s, "%3d%3d%3d", a.p, a.k, a.m);
+    return s;
+} 
+
 void sortgod(GODOFOR v[], int n){
+    char key1[MAXN], key2[MAXN];
     for(int i = 0; i < n; i++){
-        int tst = 0;
         for(int j = i+1; j < n; j++){
-            if(v[i].p > v[j].p) continue;
-            if(v[j].k > v[i].k)tst = 1;
-            else if(v[j].m < v[i].m) tst = 1;
-            else if(v[j].nome < v[i].nome) tst = 1;
-            if(tst == 1){
+            key(key1, v[i]);
+            key(key2, v[j]);
+            int ret = strcmp(key1, key2);
+            if(ret > 0) continue;
+            if((ret == 0 && strcmp(v[i].nome, v[j].nome) < 0) || ret < 0){
                 GODOFOR temp = v[i];
                 v[i] = v[j];
                 v[j] = temp;
+            }else{
+                GODOFOR temp = v[j];
+                v[j] = v[i];
+                v[i] = temp;
             }
         }
     }
