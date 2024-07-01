@@ -1,0 +1,15 @@
+joana cardoso; 1 4 1979
+antonio carlos; 19 7 1971
+joana cardoso; 13 4 1976
+pedro de oliveira; 19 5 1976
+maria de oliveira; 7 9 1971
+maria de oliveira; 22 8 1964
+pedro de oliveira; 25 3 1965
+romana peres; 19 9 1970
+pedro de oliveira; 6 6 1971
+romana peres; 4 6 1960
+antonio carlos; 21 1 2003
+pedro de oliveira; 24 7 1978
+pedro de oliveira; 4 9 1981
+joana cardoso; 8 8 2003
+pedro de oliveira; 8 3 1972

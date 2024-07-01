@@ -1,0 +1,5 @@
+Dynamic allocation is a pretty unique feature to C
+(amongst high level languages).
+It enables us to create data types and structures
+of any size and length to suit our programs
+need within the program.
