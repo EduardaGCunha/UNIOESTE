@@ -9,6 +9,7 @@ Tree::Tree(int node){
 }
 
 void Tree::add(Tree **curnode, int val){
+    //cout << (*curnode)->node << endl;
     if(*curnode == nullptr){
         *curnode = new Tree(val);
         cout << "Adicionado valor: " << val << endl;
