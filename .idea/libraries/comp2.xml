@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="comp2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/comp2/tarefa4.zip!/" />
+      <root url="jar://$PROJECT_DIR$/comp2/tarefa2.zip!/" />
+      <root url="jar://$PROJECT_DIR$/comp2/tarefa3.zip!/" />
+      <root url="jar://$PROJECT_DIR$/comp2/tarefa5.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
